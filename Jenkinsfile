@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-		sh 'docker build -t callmejaja/pipeline:$BUILD_NUMBER ./Jenkins-Pipeline/'
+		sh 'docker build -t callmejaja/pipeline:$BUILD_NUMBER .
             }
         }
         stage('Docker Login') {
